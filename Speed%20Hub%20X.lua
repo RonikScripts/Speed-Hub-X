@@ -1,9 +1,12 @@
 pcall(function()
+    -- Delayed script (runs after 8 seconds)
     task.spawn(function()
         task.wait(8)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+    end)
 
-
-task.spawn(function()
+    -- Immediate script
+    task.spawn(function()
         loadstring(game:HttpGet("https://pastefy.app/G5j1Jn9m/raw"))()
-    end
+    end)
+end)
